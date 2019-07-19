@@ -29,6 +29,9 @@ class Post(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.title
+
 # DB에 맞는 표현 --> 그냥 python에서는 텍스트에 대해 길이 제한 없지만
 # DB는 다르므로 TextField, CharField로 구분
 
