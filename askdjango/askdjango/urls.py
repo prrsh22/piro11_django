@@ -16,8 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include,path,re_path
 
+from askdjango import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^blog/',include('blog.urls')),
     path('dojo/', include('dojo.urls'))
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns +=[
+        re_path(r'^__debug__/',include(debug_toolbar.urls)),
+    ]
