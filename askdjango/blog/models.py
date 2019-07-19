@@ -10,6 +10,7 @@ def lnglat_validator(value):
 
 
 class Post(models.Model):
+    author=models.CharField(max_length=20)
     title=models.CharField(max_length=100,
           choices=(
         ('제목1','제목1 레이블'), #저장될 값, 보여질 값
