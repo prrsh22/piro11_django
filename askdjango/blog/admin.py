@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from .models import Post
+from .models import Post,Comment
 # Register your models here.
 
 @admin.register(Post)
@@ -21,6 +21,9 @@ class PostAdmin(admin.ModelAdmin):
         updated_count=queryset.update(status='d')
         self.message_user(request,'{}건의 포스팅을 Draft 상태로 변경'.format(updated_count))
 
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    pass
 #admin.site.register(Post) 여러 방법이 있음
 
 # make migrations를 통해 DB에 model 꼴의 데이터테이블 만듦

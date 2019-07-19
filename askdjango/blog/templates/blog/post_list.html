@@ -17,7 +17,9 @@
     {%  for post in post_list %} <!-- post_list 를 순회하면서 각 사항을 출력 -->
     <li>
         {{ post.id }}
-        {{ post.title }}
+        <a href="/blog/{{ post.id }}/">
+            {{post.title }}
+        </a>
         <small>by {{ post.author }}</small>
         <small>at {{ post.updated_at }}</small>
     </li>
