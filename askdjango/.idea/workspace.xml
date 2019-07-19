@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff984df5-6664-4bee-999c-2384b4b5de88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/askdjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/askdjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/askdjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/askdjango/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="ff984df5-6664-4bee-999c-2384b4b5de88" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/askdjango/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+            <state relative-caret-position="238">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="e#633#665#0" expanded="true" />
               </folding>
@@ -224,12 +220,12 @@
       <updated>1563356557207</updated>
       <workItem from="1563356563499" duration="20460000" />
       <workItem from="1563417429465" duration="40000" />
-      <workItem from="1563430974205" duration="23803000" />
+      <workItem from="1563430974205" duration="24681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44303000" />
+    <option name="totallyTimeSpent" value="45181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="598" y="0" width="618" height="727" extended-state="0" />
@@ -401,8 +397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/askdjango/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+        <state relative-caret-position="238">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#633#665#0" expanded="true" />
           </folding>
