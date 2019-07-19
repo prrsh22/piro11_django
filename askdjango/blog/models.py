@@ -10,6 +10,11 @@ def lnglat_validator(value):
 
 
 class Post(models.Model):
+    STATUS_CHOICES=(
+        ('d','Draft'),
+        ('p','Published'),
+        ('w','Withdrawn'),
+    )
     author=models.CharField(max_length=20)
     title=models.CharField(max_length=100,
           choices=(
@@ -17,9 +22,10 @@ class Post(models.Model):
         ('제목2','제목2 레이블'),
         ('제목3','제목3 레이블'),
     ), verbose_name='제목',help_text="제목을 고르시오") #길이 제한이 있는 문자열
-    tags=models.CharField(max_length=100,blank=True)
-    lnglat=models.CharField(validators=[lnglat_validator], max_length=50,help_text="경도/위도 포맷으로 입력",blank=True)
     content=models.TextField(verbose_name="내용") #길이 제한이 없는 문자열
+    tags = models.CharField(max_length=100, blank=True)
+    lnglat = models.CharField(validators=[lnglat_validator], max_length=50, help_text="경도/위도 포맷으로 입력", blank=True)
+    status=models.CharField(max_length=1,choices=STATUS_CHOICES)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
