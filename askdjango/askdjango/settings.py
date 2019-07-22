@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'debug_toolbar',
-    'blog', 'dojo','accounts',
+    'blog', 'dojo','accounts','shop',
 ]
 
 MIDDLEWARE = [
