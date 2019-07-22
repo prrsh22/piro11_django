@@ -1,4 +1,6 @@
 import re
+
+from django.conf import settings
 from django.forms import ValidationError
 from django.db import models
 
@@ -14,7 +16,8 @@ class Post(models.Model):
         ('p','Published'),
         ('w','Withdrawn'),
     )
-    author=models.CharField(max_length=20)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete='CASCADE')
+    #author=models.CharField(max_length=20)
     title=models.CharField(max_length=100,
           choices=(
         ('제목1','제목1 레이블'), #저장될 값, 보여질 값
@@ -34,6 +37,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class Comment(models.Model):
     post = models.ForeignKey('Post',on_delete=models.CASCADE)
