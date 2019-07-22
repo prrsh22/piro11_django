@@ -21,7 +21,8 @@ from askdjango import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^blog/',include('blog.urls')),
-    path('dojo/', include('dojo.urls'))
+    path('dojo/', include('dojo.urls')),
+    path('accounts/',include('accounts.urls'))
 ]
 
 if settings.DEBUG:

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Bookmark List</h1>
+{{ urlCount }}개의 북마크가 등록되어 있습니다.
+<ul>
+    {% for row in urlList %} <!--리스트 순회-->
+        <li>{{row.title}} <a href="{{ row.url }}" target="_blank" >{{ row.url }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
