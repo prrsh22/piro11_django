@@ -1,7 +1,7 @@
-from django.urls import path,re_path
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    re_path(r'^$', views.post_list),
-    re_path(r'^(?P<id>\d+)/$', views.post_detail),
+    path('', views.post_list, name='post_list'),
+    path('<int:id>/', views.post_detail, name='post_detail'),
 ]
