@@ -24,7 +24,7 @@ def root(request):
 
 
 urlpatterns = [
-    path('',root),
+    path('', root, name="root"),
     path('admin/', admin.site.urls),
     path('blog/', include(('blog.urls', "blog"))),
     path('dojo/', include(('dojo.urls', "dojo"))),
