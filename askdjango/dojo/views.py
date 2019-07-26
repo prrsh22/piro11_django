@@ -1,18 +1,54 @@
 import os
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse,JsonResponse
 from django.conf import settings
 
 
 # Create your views here.
+from dojo.forms import PostForm
+from dojo.models import Post
+
+
+def post_new(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES)
+        # 유저가 입력한 값을 넘겨서 인스턴스를 만들어 줌
+        if form.is_valid():
+            post = Post()
+            post.title = form.cleaned_data['title']
+            post.content = form.cleaned_data['content']
+            post.save()
+            '''
+            # 방법 2
+            post = Post(tite=form.cleaned_data['title'],
+            content=form.cleaned_data['content']
+            post.save()
+            
+            #방법 3
+            post = Post.objects.create(tite=form.cleaned_data['title'],
+            content=form.cleaned_data['content']
+            
+            # 방법 4
+            post = Post.objects.create(**form.cleaned_data)
+            '''
+            return redirect('/dojo/') #namespace:name
+    else:
+        form = PostForm()
+        # 빈 폼
+    return render(request,'dojo/post_form.html', {
+        'form': form,
+    })
+
 
 def mysum(request,numbers):
     return HttpResponse(sum(list(map(lambda s:int(s or 0),numbers.split('/')))))
 
 # lambda s: int(s or 0) --> 공백으로 입력된 부분을 0으로 바꿔줌
 
+
 def hello(request,name,age):
     return HttpResponse('안녕하세요. {}. {}살이시네요.'.format(name,age))
+
 
 def post_list1(requsest):
     name='공유'
