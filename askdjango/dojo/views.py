@@ -1,5 +1,5 @@
 import os
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse,JsonResponse
 from django.conf import settings
 
@@ -43,6 +43,23 @@ def post_new(request):
     return render(request,'dojo/post_form.html', {
         'form': form,
     })
+
+def post_edit(request,id):
+    post=get_object_or_404(Post,id=id)
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES, instance=post)
+        # 유저가 입력한 값을 넘겨서 인스턴스를 만들어 줌
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.ip = request.META['REMOTE_ADDR']
+            post.save()
+            return redirect('/dojo/')  # namespace:name
+    else:
+        form = PostForm()
+        # 빈 폼
+    return render(request, 'dojo/post_form.html', {
+            'form': form,
+        })
 
 
 def mysum(request,numbers):
