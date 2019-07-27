@@ -14,11 +14,16 @@ def post_new(request):
         form = PostForm(request.POST, request.FILES)
         # 유저가 입력한 값을 넘겨서 인스턴스를 만들어 줌
         if form.is_valid():
+            post = form.save(commit=False)
+            post.ip = request.META['REMOTE_ADDR']
+            post.save()
+            '''
+            # 방법 1
             post = Post()
             post.title = form.cleaned_data['title']
             post.content = form.cleaned_data['content']
             post.save()
-            '''
+            
             # 방법 2
             post = Post(tite=form.cleaned_data['title'],
             content=form.cleaned_data['content']
