@@ -55,7 +55,7 @@ def post_edit(request,id):
             post.save()
             return redirect('/dojo/')  # namespace:name
     else:
-        form = PostForm()
+        form = PostForm(instance=post)
         # 빈 폼
     return render(request, 'dojo/post_form.html', {
             'form': form,
