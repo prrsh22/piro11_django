@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff984df5-6664-4bee-999c-2384b4b5de88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dojo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dojo/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="ff984df5-6664-4bee-999c-2384b4b5de88" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +13,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dojo/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dojo/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -39,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/post_form.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -88,7 +98,6 @@
         <option value="$PROJECT_DIR$/askdjango/urls.py" />
         <option value="$PROJECT_DIR$/askdjango/templates/layout.html" />
         <option value="$PROJECT_DIR$/dojo/templates/dojo/post_form.html" />
-        <option value="$PROJECT_DIR$/dojo/forms.py" />
         <option value="$PROJECT_DIR$/dojo/urls.py" />
         <option value="$PROJECT_DIR$/dojo/views.py" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
@@ -98,6 +107,7 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/post_detail.html" />
         <option value="$PROJECT_DIR$/dojo/admin.py" />
         <option value="$PROJECT_DIR$/dojo/models.py" />
+        <option value="$PROJECT_DIR$/dojo/forms.py" />
       </list>
     </option>
   </component>
@@ -127,24 +137,6 @@
             <path>
               <item name="askdjango" type="b2602c69:ProjectViewProjectNode" />
               <item name="askdjango" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="askdjango" type="b2602c69:ProjectViewProjectNode" />
-              <item name="askdjango" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="askdjango" type="b2602c69:ProjectViewProjectNode" />
-              <item name="askdjango" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="askdjango" type="b2602c69:ProjectViewProjectNode" />
-              <item name="askdjango" type="462c0819:PsiDirectoryNode" />
               <item name="dojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -152,6 +144,19 @@
               <item name="askdjango" type="462c0819:PsiDirectoryNode" />
               <item name="dojo" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="askdjango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="askdjango" type="462c0819:PsiDirectoryNode" />
+              <item name="dojo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="askdjango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="askdjango" type="462c0819:PsiDirectoryNode" />
+              <item name="dojo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="dojo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -232,17 +237,18 @@
       <workItem from="1563766957499" duration="27877000" />
       <workItem from="1563939798945" duration="90000" />
       <workItem from="1563964466037" duration="23173000" />
-      <workItem from="1564728149129" duration="2849000" />
+      <workItem from="1564728149129" duration="3134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108800000" />
+    <option name="totallyTimeSpent" value="109085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="597" y="0" width="618" height="727" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29107141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29107141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -256,7 +262,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33613446" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33613446" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -513,29 +519,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/post_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dojo/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -567,6 +556,23 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/post_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
