@@ -7,14 +7,14 @@ from .forms import PostForm
 # Create your views here.
 
 def post_list(request):
-    qs=Post.objects.all() #그냥 만든 것. db 접근 아직.
-    q=request.GET.get('q','')
+    qs = Post.objects.all() #그냥 만든 것. db 접근 아직.
+    q = request.GET.get('q', '')
     if q:
-        qs=qs.filter(title__icontains=q)
+        qs = qs.filter(title__icontains=q)
 
     # messages.error(request, '에러메세지 테스트')
 
-    return render(request,'blog/post_list.html',{'post_list':qs,'q':q,})
+    return render(request, 'blog/post_list.html', {'post_list': qs, 'q': q, })
 
 
 def post_detail(request,id):
